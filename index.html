@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pixelpen</title>
+  <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="navbar.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Pixelpen</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#profile">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#projects">Our Work</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <nav id="hamburger-nav">
+    <div class="logo">Pixelpen</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="menu-links">
+        <li><a href="#profile" onclick="toggleMenu()">About</a></li>
+        <li><a href="#about" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <section id="profile">
+    <div class="section__pic-container">
+      <img style="border-radius: 100%;" src="./assets/profile-pic.png" alt="Hoàng Long profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, We Are</p>
+      <h1 class="title" id="main-title"><em>Pixelpen</em></h1>
+      <p class="section__text__p2">Video Editing Agency</p>
+
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <a href="https://api.whatsapp.com/send?phone=+919024932532" target="_blank" rel="noopener noreferrer">
+            Connect Us</a>
+        </div>
+
+      </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Us</h1>
+    <div class="section-container">
+      <div class="about-details-container">
+        
+        <div class="text-container">
+          <h3 style="color:rgb(206, 203, 60)">"We create videos that break the loop" </h3>
+          <p>
+            get rid of the headache to edit videos!
+            We'll do that for you! Do more in less time!
+          </p>
+        </div>
+
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+
+  <section id="projects">
+    <!-- <p class="section__text__p1">Browse My Recent</p> -->
+    <h1 class="title">Our Recent Work</h1>
+    <div class="experience-details-container">
+      <div class="about-containers projects-container">
+
+        <div class="details-container1 color-container">
+          <div
+            style="margin-left: -20px; position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; width: 100%;"
+            class="project">
+            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" class="iframe_c" id="iframe_main"
+              src="https://www.youtube.com/embed/rjgGXdv7bq4" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <button class="btn btn-color-2 project-btn" onclick="openPopup('https://www.youtube.com/embed/rjgGXdv7bq4')">
+            Live Demo
+          </button>
+        </div>
+
+        <div class="details-container1 color-container">
+          <div
+            style="margin-left: -20px; position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; width: 100%;"
+            class="project">
+            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" class="iframe_c" id="iframe_main" 
+              src="https://www.youtube.com/embed/jj1kka_V_3M" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <button class="btn btn-color-2 project-btn" onclick="openPopup('https://www.youtube.com/embed/jj1kka_V_3M')">
+            Live Demo
+          </button>
+        </div>
+
+
+        <div class="details-container-reel color-container-reel">
+          <div style="height:auto; width: calc(100%-20px);">
+            <div class="ifram-container" style="height: auto; width: auto; position: relative; overflow: hidden;">
+              <video style="width: calc(100% - 10px); height: 100%; object-fit: cover;" controls class="video-reel">
+                <source src="assets/VN20240618_211122.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+        
+        <div class="details-container-reel color-container-reel">
+          <div style="height:auto; width: calc(100%-20px);">
+            <div class="ifram-container" style="height: auto; width: auto; position: relative; overflow: hidden;">
+              <video style="width: calc(100% - 10px); height: 100%; object-fit: cover;" controls class="video-reel">
+                <source src="assets/VN20240620_133021.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+        
+        <div class="details-container-reel color-container-reel">
+          <div style="height:auto; width: calc(100%-20px);">
+            <div class="ifram-container" style="height: auto; width: auto; position: relative; overflow: hidden;">
+              <video style="width: calc(100% - 10px); height: 100%; object-fit: cover;" controls class="video-reel">
+                <source src="assets/VN20240620_094800.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+        
+        <div class="details-container-reel color-container-reel">
+          <div style="height:auto; width: calc(100%-20px);">
+            <div class="ifram-container" style="height: auto; width: auto; position: relative; overflow: hidden;">
+              <video style="width: calc(100% - 10px); height: 100%; object-fit: cover;" controls class="video-reel">
+                <source src="assets/16th.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+        
+        <div class="details-container-reel color-container-reel">
+          <div style="height:auto; width: calc(100%-20px);">
+            <div class="ifram-container" style="height: auto; width: auto; position: relative; overflow: hidden;">
+              <video style="width: calc(100% - 10px); height: 100%; object-fit: cover;" controls class="video-reel">
+                <source src="assets/VN20240620_103523.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+      <div id="popup" class="popup">
+        <iframe width="560" height="415" src="" frameborder="0" allowfullscreen class="popup-video"
+          id="popup-video"></iframe>
+      </div>
+    </div>
+
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+
+
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Us</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:business.jaikishan@gmail.com">business.jaikishan@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/instagram.png" alt="Instagram icon" class="icon contact-icon instagram-icon" />
+        <a href="https://www.instagram.com/meetyour.editor" target="_blank" rel="noopener noreferrer">Follow Us on
+          Instagram</a>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/phone.png" alt="Phone icon" class="icon contact-icon phone-icon" />
+        <a href="https://api.whatsapp.com/send?phone=+919024932532" target="_blank" rel="noopener noreferrer">+91
+          9024932532</a>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#profile">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#projects">Our Work</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <p>Copyright &#169; 2024 Pixelpen. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
